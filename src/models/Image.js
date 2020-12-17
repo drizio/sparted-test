@@ -5,8 +5,7 @@ export const data = {
     return m
       .request({
         method: "GET",
-        url: "https://picsum.photos/v2/list",
-        //withCredentials: true,
+        url: "https://picsum.photos/v2/list?limit=7",
       })
       .then(function (items) {
         data.list = items;
